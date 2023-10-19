@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+.tab > div > input[type="radio"] {
+    display: none;
+}
+
+h1 {
+    color: #beb8e1;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: #191724;
+    color: #8f8ba9;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+
+    justify-content: center;
+    align-items: center;
+    padding: 10vw;
+}
+
+.main-element {
+    text-align: justify;
+    margin: 2em 0em;
+}
+
+.tab-content {
+    display: none;
+    width: 50em;
+    background-color: #2d2940ea;
+    border-radius: 15px;
+    padding: 1vw;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+div > input[type="radio"]:checked + label {
+    cursor: default;
+    color: #fff;
+    background-color: #2b78eb;
+}
+
+#tab-button1:checked ~ #main,
+#tab-button2:checked ~ #ex-1 {
+    display: block;
+}
+
+div > label {
+    display: block;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    /* transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+        border-color 0.1s ease-in-out; */
+    text-decoration: none;
+    color: #2b78eb;
+    border: 0;
+    border-radius: 0.375rem;
+    background: 0 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}

@@ -1,0 +1,81 @@
+:root {
+    background-color: #191724;
+    color: #8f8ba9;
+    font-size: 15px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.ref-button {
+    text-decoration: none;
+    color: #905c9a;
+    /* font-weight: bold; */
+}
+
+.contener {
+    width: 80vw;
+    height: 30vh;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+    /* margin: 200vh 0hv; */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    flex-shrink: 0;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    order: -1;
+    padding: 5px;
+    text-align: center;
+}
+
+.tab-content {
+    /* flex-shrink: 10; */
+    /* max-height: 20em; */
+    background-color: #2d2940ea;
+    border-radius: 10px;
+    padding: 1vw;
+    display: none;
+    flex-wrap: wrap;
+}
+
+#main:target ~ .buttons > [href="#main"],
+#ex-1:target ~ .buttons > [href="#ex-1"],
+#ex-2:target ~ .buttons > [href="#ex-2"],
+#ex-3:target ~ .buttons > [href="#ex-3"],
+#ex-4:target ~ .buttons > [href="#ex-4"] {
+    cursor: default;
+    color: #fff;
+    background-color: #905c9a;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.tab-content:target {
+    display: flex;
+}
+
+/* .tab {
+    display: flex;
+} */
